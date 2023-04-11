@@ -1,0 +1,429 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+html{
+  font-size: 62,5%;
+  /* background-image:url("../img/FLSAh1LXoAE-EBs.jpg");
+  background-size:cover;
+  background-repeat: no-repeat; */
+  font-family: 'Roboto', sans-serif;
+}
+
+li{
+  list-style: none;
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: underline orange 2px;
+}
+
+select{
+  width: fit-content;
+  background-color: orange;
+  color: #f3f7f8;
+  border-style: none;
+  padding: .2rem;
+  font-size: 1.2rem;
+}
+
+h1{
+  font-size: 4.5rem;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 1rem 0 0 0;
+  line-height: 1;
+  padding: 0;
+}
+
+h2{
+  font-size: 3.2rem;
+  line-height: normal;
+}
+h4{
+  font-size: 1.5rem;
+  color: orange;
+  text-transform:capitalize;
+  margin: 1rem;
+}
+
+h3{
+  font-size: 3.2rem;
+  /* text-align: left; */
+  /* margin: 1rem; */
+  text-transform: capitalize;
+}
+
+div{
+  width: 15rem;
+  height: 15rem;
+  padding: 1rem;
+  margin: 1rem .6rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+div:hover{
+  background-color: rgba(0,0,0,0.6);
+  opacity: .6;
+  border: orange 2px solid;
+  border-radius: 4px;
+}
+
+div span{
+  margin: 1rem 0;
+  opacity: 0;
+}
+
+div:hover span{
+  opacity: 1.2;
+  color: orange;
+  background-color: black;
+}
+p{
+  margin:1rem;
+}
+
+
+
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  font-size: 1rem;
+  background-image:url("../img/FLSAh1LXoAE-EBs.jpg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.header{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  height: 3rem;
+  /* justify-content: flex-end; */
+  margin: .2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo{
+  margin: auto;
+  margin-left: 2rem;
+  /* margin-left: 0; */
+}
+
+.navBar ul{
+  flex-direction: row;
+  display: flex;
+}
+
+.nav li{
+  padding: 0 .6rem;
+  margin: 0 .6rem; 
+}
+
+i{
+  color: orange;
+}
+
+
+/* ------------------------------------------ */
+.introBG{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.introContainer{
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10rem;
+  padding-top: 5%;
+}
+
+/* .introContainer h2{
+  margin-bottom: 1rem;
+  text-align: right;
+} */
+
+.seachStat{
+  display: flex;
+  flex-direction: column;
+}
+
+.search{
+  font-size: 1.4rem;
+}
+
+input{
+  width: 16rem;
+  margin: auto;
+}
+
+.stats{
+  font-size: 1.4rem;
+  padding-top: 1.6rem;
+}
+
+.stats span{
+  /* margin-left: 2rem; */
+  margin-right: 2rem;
+}
+
+.stats span>i{
+  margin: .2rem;
+}
+
+/* ------------------------------------------------- */
+
+.introHeading{
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  background-image: url('../img/FLSAiBEXoAAtS93.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x:20rem; 
+
+}
+
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* flex-wrap: wrap; */
+  padding: 3%;
+  background: #f3f7f8;
+  mar
+}
+
+.heading h3{
+  margin:1rem;
+}
+
+.heading p{
+  font-size: 1.1rem;
+  /* text-align: left;
+  text-align: right; */
+  line-height: 1.6rem;
+  margin: 1rem;
+  text-align: justify;
+}
+/* ----------------------------------- */
+
+.orderNow{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.2rem;
+  background: #f3f7f8;
+}
+
+.orderNow ul{
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+
+
+.orderNow ul>li{
+  margin: 1.2rem 2rem;
+}
+
+.orderNow ul>li>a:hover{
+  text-decoration:underline black;
+  color: orange;
+  transition: 0.3s ease-in-out;
+}
+
+
+.gallery{
+  display: flex;
+  flex:auto;
+  justify-content: center;
+}
+
+.dish1{
+  background-image: url("../img/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg");
+}
+
+.dish2{
+  background-image: url("../img/jezebel-rose-KGw62KtHzxA-unsplash.jpg");
+}
+
+.dish3{
+  background-image: url("../img/khloe-arledge-ND3edEmzcdQ-unsplash.jpg");
+}
+
+.dish4{
+  background-image: url("../img/will-echols-P_l1bJQpQF0-unsplash.jpg");
+}
+.dish5{
+  background-image: url("../img/ben-kolde-rQsYZnCRU00-unsplash.jpg");
+}
+.dish6{
+  background-image: url("../img/asnim-ansari-SqYmTDQYMjo-unsplash.jpg");
+}
+.dish7{
+  background-image: url("../img/martin-widenka-tkfRSPt-jdk-unsplash.jpg");
+}
+.dish8{
+  background-image: url("../img/alexandra-kusper-NOgypj8gyHI-unsplash.jpg");
+}
+
+.text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top:hover .text {
+  opacity: 1;
+}
+
+.text span{
+  padding: 1.5rem;
+  display: flex;
+}
+
+
+/* ------------------------------------------------------------ */
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  background: #f3f7f8;
+}
+
+.times{
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.times section{
+  display: flex;
+  flex-direction: column;
+}
+.times span{
+  text-transform: capitalize;
+  justify-items: end;
+  margin: .4rem;
+
+}
+
+.times span+span{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact>div{
+  border-radius: 1rem;
+  height: auto;
+  width: auto;
+  background-color: antiquewhite;
+}
+
+
+/* --------------------------------------------- */
+
+.review{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("../img/firdaus-ramadhan-1AMsQMsERy4-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.person{
+  display: flex;
+  flex-direction: column;
+  background-color:#e7f1f0;
+  border-radius: 10px;
+  width: 30rem;
+  height: fit-content;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.reviewImg{
+  margin: auto;
+}
+
+.reviewImg > img{
+  width: 15rem ;
+  height: 15rem;
+  border-radius:10rem ;
+}
+
+.stars{
+  display: flex;
+  justify-content: center;
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
