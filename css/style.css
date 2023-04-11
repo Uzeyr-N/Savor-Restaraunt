@@ -224,7 +224,6 @@ input{
   /* flex-wrap: wrap; */
   padding: 3%;
   background: #f3f7f8;
-  mar
 }
 
 .heading h3{
@@ -414,16 +413,11 @@ input{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media (min-width: 40rem) and (max-width: 60rem) {
+  h1{
+    color: #f3f7f8;
+  }
+}
