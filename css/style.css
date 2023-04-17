@@ -545,6 +545,15 @@ input{
   
   .nav li {
     margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+  }
+
+  i{
+    color: black;
   }
   
   .hamburger-menu {
