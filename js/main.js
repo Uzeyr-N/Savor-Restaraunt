@@ -1,6 +1,10 @@
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navMenu = document.querySelector('.nav');
+const hamburger = document.querySelector('.hamburger-menu');
+const menu = document.querySelector('.nav');
 
-hamburgerMenu.addEventListener('click', function() {
-  navMenu.classList.toggle('menu-open');
+hamburger.addEventListener('click', function() {
+  if (menu.style.display === 'none') {
+    menu.style.display = 'block';
+  } else {
+    menu.style.display = 'none';
+  }
 });
